@@ -1,0 +1,11 @@
+{
+  "Hero": {
+    "title": "Moe Kyaw Aung",
+    "subtitle": "Senior Android Developer | Full Stack Developer",
+    "location": "Tachileik, Myanmar 🇲🇲 ↔ Bangkok, Thailand 🇹🇭"
+  },
+  "About": {
+    "heading": "About Me",
+    "story": "10+ years crafting scalable, production-grade Android applications..."
+  }
+}
