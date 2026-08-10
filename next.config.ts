@@ -3,7 +3,9 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin();
 
 const nextConfig = {
+  output: 'export',
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -14,6 +16,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'gravatar.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'avatars.githubusercontent.com',
+      },
     ],
   },
   experimental: {
@@ -21,6 +27,8 @@ const nextConfig = {
       bodySizeLimit: '2mb',
     },
   },
+  trailingSlash: true,
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
 };
 
 export default withNextIntl(nextConfig);
