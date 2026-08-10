@@ -1,0 +1,41 @@
+{
+  "name": "portfolio-2026",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next build && next export",
+    "deploy:vercel": "vercel --prod",
+    "deploy:netlify": "netlify deploy --prod",
+    "deploy:github": "gh-pages -d out",
+    "deploy:cloudflare": "wrangler pages deploy out",
+    "deploy:gitlab": "git push origin main:gh-pages",
+    "sync:notion": "node scripts/sync-notion.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "@notionhq/client": "^2.2.15",
+    "framer-motion": "^11.15.0",
+    "lucide-react": "^0.468.0",
+    "next": "15.2.4",
+    "next-intl": "^3.26.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^8",
+    "eslint-config-next": "15.2.4",
+    "gh-pages": "^6.3.0",
+    "netlify-cli": "^18.0.0",
+    "typescript": "^5",
+    "vercel": "^39.3.0",
+    "wrangler": "^3.105.0"
+  }
+}
