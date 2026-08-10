@@ -1,0 +1,13 @@
+{
+  "notion": {
+    "databaseId": "your_notion_database_id",
+    "apiToken": "your_notion_api_token",
+    "blogPostsDatabase": "your_blog_database_id",
+    "projectsDatabase": "your_projects_database_id"
+  },
+  "sync": {
+    "enabled": true,
+    "interval": "hourly",
+    "webhook": "https://your-webhook-url.com/notion-sync"
+  }
+}
