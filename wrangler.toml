@@ -1,0 +1,7 @@
+name = "moekyawaung-portfolio"
+compatibility_date = "2024-01-01"
+pages_build_output_dir = "./out"
+
+[vars]
+NEXT_PUBLIC_SITE_URL = "https://moekyawaung.pages.dev"
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME = "dye5qpwii"
